@@ -1,0 +1,178 @@
+/* --- RESET AK FONT DE BAZ --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Koulè nwa ble trè modèn */
+    color: #f8fafc;
+    overflow-x: hidden;
+}
+
+/* --- 1. NAVBAR (Pratike Flexbox) --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff7a00; /* Koulè zoranj kafe */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ff7a00;
+}
+
+.btn-nav {
+    background-color: transparent;
+    border: 2px solid #ff7a00;
+    color: #ff7a00;
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-nav:hover {
+    background-color: #ff7a00;
+    color: #fff;
+}
+
+/* --- 2. HERO SECTION (Banyè Santre) --- */
+.hero {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* Bèl efè gradyan sou tèks la */
+.text-gradient {
+    background: linear-gradient(45deg, #ff7a00, #ffb800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.hero-buttons button {
+
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #ff7a00;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #334155;
+    color: rgba(255, 255, 255, 0.941);
+}
+
+.hero-buttons button:hover {
+    transform: translateY(-3px); /* Ti animasyon ki leve bouton an */
+}
+
+/* --- 3. SERVICES SECTION (Pratike Grid) --- */
+.services {
+    padding: 60px 8%;
+    background-color: #1e293b;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* Aliyen kat yo sou yon bèl griyaj */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #0f172a;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Efè lè sourit la pase sou yon kat */
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #ff7a00;
+    box-shadow: 0 10px 20px rgba(255, 122, 0, 0.1);
+}
