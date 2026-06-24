@@ -1,4 +1,4 @@
-/* --- RESET AK FONT DE BAZ --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +7,11 @@
 }
 
 body {
-    background-color: #0f172a; /* Koulè nwa ble trè modèn */
+    background-color: #0f172a; 
     color: #f8fafc;
     overflow-x: hidden;
 }
 
-/* --- 1. NAVBAR (Pratike Flexbox) --- */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -28,7 +27,7 @@ body {
 }
 
 .logo span {
-    color: #ff7a00; /* Koulè zoranj kafe */
+    color: #ff7a00; 
 }
 
 .nav-links {
@@ -67,7 +66,7 @@ body {
     color: #fff;
 }
 
-/* --- 2. HERO SECTION (Banyè Santre) --- */
+
 .hero {
     height: 70vh;
     display: flex;
@@ -87,7 +86,7 @@ body {
     line-height: 1.2;
 }
 
-/* Bèl efè gradyan sou tèks la */
+
 .text-gradient {
     background: linear-gradient(45deg, #ff7a00, #ffb800);
     -webkit-background-clip: text;
@@ -123,10 +122,10 @@ body {
 }
 
 .hero-buttons button:hover {
-    transform: translateY(-3px); /* Ti animasyon ki leve bouton an */
+    transform: translateY(-3px); 
 }
 
-/* --- 3. SERVICES SECTION (Pratike Grid) --- */
+
 .services {
     padding: 60px 8%;
     background-color: #1e293b;
@@ -138,7 +137,7 @@ body {
     margin-bottom: 40px;
 }
 
-/* Aliyen kat yo sou yon bèl griyaj */
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -170,7 +169,7 @@ body {
     line-height: 1.5;
 }
 
-/* Efè lè sourit la pase sou yon kat */
+
 .card:hover {
     transform: translateY(-10px);
     border-color: #ff7a00;

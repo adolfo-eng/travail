@@ -4,66 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code & Cafe | Page d'acceuil</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .navbar{
+            background-color: purple !important;
+        }
+        .btn{
+            background-color: white !important;
+            border-color: white !important;
+            color: purple !important;
+        }
+        .btn:hover{
+            background-color: purple !important;
+            color: white !important;
+        }
+    </style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg bg-warning navbar-dark fs-2">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="image/Olise.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="image/olise.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="image/OLISE.webp" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-    
-    <header class="navbar">
-        <div class="logo">Code <span>& Cafe</span></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Acceuil</a></li>
-                <li><a href="Menu.html">Menu</a></li>
-                <li><a href="espace.html">Espace de travail</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="btn-nav">Reservez une Table</button>
-    </header>
-
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Ecrivez vos meilleurs codes autour d'un bon <span class="text-gradient">cafe</span></h1>
-            <p>Le meilleur endroit en Haiti pour developper,programmer et discuter avec les developpeurs Haitiens autour d'un excellent cafe et d'une connexion internet a la hauteur.</p>
-            <div class="hero-buttons">
-                 <a href="Menu.html"><button class="btn-primary">Voir le menu</button></a>
-                <a href="espace.html"><button class="btn-secondary">Visitez l'espace</button></a>
-            </div>
-        </div>
-    </section>
-
-    
-    <section class="services">
-        <h2 class="section-title">Nos services</h2>
-        <div class="cards-container">
-            
-            
-            <div class="card">
-                <div class="card-icon">☕</div>
-                <h3>Cafe de l'artisan</h3>
-                <p>Nous vous servons le meilleur cafe trie et prepare par des professionnels Haitiens pour activer votre cerveau.</p>
-            </div>
-
-            
-            <div class="card">
-                <div class="card-icon">⚡</div>
-                <h3>Excellente connexion</h3>
-                <p>Vos codes pourront se deployer sans perdre de temps avec notre excellente connexion a internet.</p>
-            </div>
-
-            
-            <div class="card">
-                <div class="card-icon">🤝</div>
-                <h3>Communaute</h3>
-                <p>Rencontrez des developpeurs Haitiens,partagez vos idees et batissez des projets visant a changer le monde radicalement.</p>
-            </div>
-
-        </div>
-    </section>
-    <footer>
-    <p><small>&copy;2026,Adolfo Birvan BRIOCHE,Tous droits reserves</small></p>
-    </footer>
+<div class="row">
+    <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+  <img src="image/olise (1).jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+</div>
+ <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+  <img src="image/franceolise.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
